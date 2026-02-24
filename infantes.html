@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Construcción histórica de las infancias</title>
+
+<style>
+body{
+    margin:0;
+    font-family:'Segoe UI', sans-serif;
+    background: linear-gradient(to right,#fce4ec,#e3f2fd),
+                url("fondo-infancia.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+    color:#333;
+}
+
+header{
+    text-align:center;
+    padding:40px;
+    background: linear-gradient(90deg,#8e24aa,#ff80ab);
+    color:white;
+}
+
+header h1{
+    margin:0;
+    font-size:2.5em;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    background:#6a1b9a;
+}
+
+nav button{
+    background:none;
+    border:none;
+    color:white;
+    padding:15px 20px;
+    cursor:pointer;
+    font-size:1em;
+    font-weight:bold;
+}
+
+nav button:hover{
+    background:#ab47bc;
+}
+
+.contenido{
+    padding:50px 10%;
+    display:none;
+    animation:fade 0.5s ease-in-out;
+}
+
+@keyframes fade{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+.activo{
+    display:block;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+    margin-top:20px;
+}
+
+/* INTEGRANTES MEJORADOS */
+
+.integrantes{
+    display:flex;
+    flex-wrap:wrap;
+    gap:25px;
+    margin-top:20px;
+}
+
+.integrante{
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    width:250px;
+    text-align:center;
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.integrante:hover{
+    transform: translateY(-5px);
+}
+
+.integrante img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+.integrante h3{
+    margin:5px 0;
+    color:#6a1b9a;
+}
+
+.integrante p{
+    font-size:0.9em;
+    line-height:1.4;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#6a1b9a;
+    color:white;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌸 Construcción histórica de las infancias 🌸</h1>
+    <p>Licenciatura en Educación Inicial</p>
+</header>
+
+<nav>
+    <button onclick="mostrar('presentacion')">Presentación</button>
+    <button onclick="mostrar('lugar')">1. El lugar de las infancias</button>
+    <button onclick="mostrar('trayectos')">2. Trayectos históricos</button>
+    <button onclick="mostrar('transformacion')">3. Transformación de las realidades</button>
+    <button onclick="mostrar('desafios')">4. Desafíos para la acción</button>
+</nav>
+
+<div id="presentacion" class="contenido activo">
+    <h2>Presentación</h2>
+    <div class="card">
+        <p>
+            Este espacio digital es una construcción colaborativa que analiza
+            la evolución histórica de las infancias desde una mirada pedagógica.
+            Como futuras docentes reconocemos a niños y niñas como sujetos de
+            derechos, con voz, identidad y capacidad transformadora.
+        </p>
+    </div>
+
+    <h2>Integrantes</h2>
+    <div class="integrantes">
+
+        <div class="integrante">
+            <img src="luisa.jpg">
+            <h3>Luisa Fernanda Barrientos</h3>
+            <p>Interesada en el análisis de los contextos sociales que influyen en el desarrollo infantil, promoviendo una educación basada en el respeto y la inclusión.</p>
+        </div>
+
+        <div class="integrante">
+            <img src="yerly.jpg">
+            <h3>Yerly Johana Canizalez</h3>
+            <p>Comprometida con la comprensión de las realidades sociales que atraviesan las infancias y su impacto en el desarrollo emocional y cognitivo.</p>
+        </div>
+
+        <div class="integrante">
+            <img src="maria.jpg">
+            <h3>Maria Isabel Gomez Rincon</h3>
+            <p>Enfocada en fortalecer prácticas pedagógicas que reconozcan a los niños y niñas como sujetos de derechos dentro de contextos diversos.</p>
+        </div>
+
+        <div class="integrante">
+            <img src="adriana.jpg">
+            <h3>Adriana Lucia Quintero Ladino</h3>
+            <p>Estudiante de Licenciatura en Educación Inicial con interés en la educación inclusiva, la equidad social y el desarrollo integral de la primera infancia.</p>
+        </div>
+
+        <div class="integrante">
+            <img src="juli.jpg">
+            <h3>Juli Estefany Valencia Naranjo</h3>
+            <p>Interesada en generar propuestas educativas que respondan a las diferencias culturales y territoriales en el desarrollo infantil.</p>
+        </div>
+
+    </div>
+</div>
+
+<div id="lugar" class="contenido">
+    <h2>El lugar de las infancias</h2>
+    <div class="card">
+        <p>
+            Históricamente la infancia no siempre ocupó un lugar visible.
+            En diferentes épocas los niños eran considerados adultos en miniatura.
+            Con el desarrollo de la pedagogía y los movimientos sociales,
+            se consolidó el reconocimiento de la infancia como etapa fundamental
+            del desarrollo humano.
+        </p>
+        <p>
+            Desde nuestra formación, comprendemos que el lugar de las infancias
+            debe construirse desde el respeto, la inclusión y la garantía de derechos.
+        </p>
+    </div>
+</div>
+
+<div id="trayectos" class="contenido">
+    <h2>Trayectos históricos</h2>
+    <div class="card">
+        <p>(Se desarrollará en el Escenario 3)</p>
+    </div>
+</div>
+
+<div id="transformacion" class="contenido">
+    <h2>Transformación de las realidades</h2>
+    <div class="card">
+        <p>(Se desarrollará en el Escenario 4)</p>
+    </div>
+</div>
+
+<div id="desafios" class="contenido">
+    <h2>Desafíos para la acción</h2>
+    <div class="card">
+        <p>(Se desarrollará en el Escenario 5)</p>
+    </div>
+</div>
+
+<footer>
+    2026 – Educación Inicial – Trabajo colaborativo
+</footer>
+
+<script>
+function mostrar(id){
+    var secciones = document.querySelectorAll('.contenido');
+    secciones.forEach(function(seccion){
+        seccion.classList.remove('activo');
+    });
+    document.getElementById(id).classList.add('activo');
+}
+</script>
+
+</body>
+</html>
